@@ -15,6 +15,6 @@ def get_stock(item_name: str):
         if quantity > 0:
             return {"result": f"{item_name}は、現在{quantity}個在庫があります。"}
         else:
-            return {"result": f"{item_name}という商品名は見つかりませんでした。"}
+            return {"result": f"{item_name}は、現在在庫切れです。"}
     else:
         return {"result": f"{item_name}という商品名は見つかりませんでした。"}
